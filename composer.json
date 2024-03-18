@@ -1,0 +1,31 @@
+{
+  "name": "minzink/content_search_ai",
+  "description": "AI empowered TYPO3 Content Search",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Timo Schulz"
+    }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "minzink/typo3_custom_ai": "@dev"
+  },
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "minzink\\content_search_ai\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "content_search_ai"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
+}
